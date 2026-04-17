@@ -1,6 +1,7 @@
 //
 // Created by Ruizhe Hou on 2020/9/27.
 //
+#include <iostream>
 #include <vector>
 
 using namespace std;
@@ -32,3 +33,12 @@ public:
         return ans;
     }
 };
+
+int main() {
+    Solution sol;
+    vector<vector<int>> req1 = {{0, 1}, {1, 0}, {0, 1}, {1, 2}, {2, 0}, {3, 4}};
+    cout << sol.maximumRequests(5, req1) << endl; // 5
+    vector<vector<int>> req2 = {{0, 0}, {1, 2}, {2, 1}};
+    cout << sol.maximumRequests(3, req2) << endl; // 3
+    return 0;
+}

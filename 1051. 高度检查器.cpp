@@ -1,7 +1,9 @@
 //
 // Created by Ruizhe Hou on 2020/10/12.
 //
+#include <iostream>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
@@ -22,3 +24,12 @@ public:
         return count;
     }
 };
+
+int main() {
+    Solution sol;
+    vector<int> h1 = {1, 1, 4, 2, 1, 3};
+    cout << sol.heightChecker(h1) << endl; // 3
+    vector<int> h2 = {5, 1, 2, 3, 4};
+    cout << sol.heightChecker(h2) << endl; // 5
+    return 0;
+}

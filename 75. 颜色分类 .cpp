@@ -1,6 +1,7 @@
 //
 // Created by Ruizhe Hou on 2020/10/7.
 //
+#include <iostream>
 #include <vector>
 
 using namespace std;
@@ -24,3 +25,12 @@ public:
         }
     }
 };
+
+int main() {
+    Solution sol;
+    vector<int> nums = {2, 0, 2, 1, 1, 0};
+    sol.sortColors(nums);
+    for (int v : nums) cout << v << " ";
+    cout << endl; // 0 0 1 1 2 2
+    return 0;
+}

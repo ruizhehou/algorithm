@@ -1,6 +1,7 @@
 //
 // Created by Ruizhe Hou on 2020/9/17.
 //
+#include <iostream>
 #include <vector>
 
 using namespace std;
@@ -112,3 +113,14 @@ public:
         }
     }
 };
+
+int main() {
+    Solution sol;
+    vector<vector<int>> edges1 = {{1, 2}, {1, 3}, {2, 3}};
+    auto r1 = sol.findRedundantDirectedConnection(edges1);
+    cout << r1[0] << " " << r1[1] << endl; // 2 3
+    vector<vector<int>> edges2 = {{1, 2}, {2, 3}, {3, 4}, {4, 1}, {1, 5}};
+    auto r2 = sol.findRedundantDirectedConnection(edges2);
+    cout << r2[0] << " " << r2[1] << endl; // 4 1
+    return 0;
+}

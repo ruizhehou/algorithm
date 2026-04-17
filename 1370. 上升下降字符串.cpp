@@ -1,6 +1,7 @@
 //
 // Created by Ruizhe Hou on 2020/10/10.
 //
+#include <iostream>
 #include <string>
 
 using namespace std;
@@ -39,3 +40,10 @@ public:
         return res;
     }
 };
+
+int main() {
+    Solution sol;
+    cout << sol.sortString("aaaabbbbcccc") << endl; // abccbaabccba
+    cout << sol.sortString("rat") << endl; // art
+    return 0;
+}

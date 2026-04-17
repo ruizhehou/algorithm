@@ -2,6 +2,7 @@
 // Created by Ruizhe Hou on 2020/10/8.
 //
 
+#include <iostream>
 #include <string>
 #include <vector>
 #include <unordered_set>
@@ -26,3 +27,10 @@ public:
         return us.size();
     }
 };
+
+int main() {
+    Solution sol;
+    vector<string> words = {"gin", "zen", "gig", "msg"};
+    cout << sol.uniqueMorseRepresentations(words) << endl; // 2
+    return 0;
+}

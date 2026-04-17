@@ -1,6 +1,7 @@
 //
 // Created by Ruizhe Hou on 2020/10/6.
 //
+#include <iostream>
 #include <vector>
 #include <set>
 #include <string>
@@ -19,5 +20,13 @@ public:
             if (!from.count(path[1]))
                 return path[1];
         }
+        return "";
     }
 };
+
+int main() {
+    Solution sol;
+    vector<vector<string>> paths = {{"London", "New York"}, {"New York", "Lima"}, {"Lima", "Sao Paulo"}};
+    cout << sol.destCity(paths) << endl; // Sao Paulo
+    return 0;
+}

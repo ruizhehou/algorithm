@@ -1,8 +1,9 @@
 //
 // Created by houruizhe on 2020/10/19.
 //
-#include <vector>
 #include <iostream>
+#include <vector>
+#include <string>
 
 using namespace std;
 
@@ -28,3 +29,12 @@ public:
         return true;
     }
 };
+
+int main() {
+    Solution sol;
+    cout << sol.backspaceCompare("ab#c", "ad#c") << endl; // 1
+    cout << sol.backspaceCompare("ab##", "c#d#") << endl; // 1
+    cout << sol.backspaceCompare("a##c", "#a#c") << endl; // 1
+    cout << sol.backspaceCompare("a#c", "b") << endl; // 0
+    return 0;
+}

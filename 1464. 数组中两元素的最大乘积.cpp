@@ -1,6 +1,7 @@
 //
 // Created by Ruizhe Hou on 2020/10/9.
 //
+#include <iostream>
 #include <vector>
 
 using namespace std;
@@ -20,3 +21,12 @@ public:
         return (m1 - 1) * (m2 - 1);
     }
 };
+
+int main() {
+    Solution sol;
+    vector<int> nums1 = {3, 4, 5, 2};
+    cout << sol.maxProduct(nums1) << endl; // 12
+    vector<int> nums2 = {1, 5, 4, 5};
+    cout << sol.maxProduct(nums2) << endl; // 16
+    return 0;
+}

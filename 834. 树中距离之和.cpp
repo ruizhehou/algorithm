@@ -1,6 +1,7 @@
 //
 // Created by Ruizhe Hou on 2020/10/6.
 //
+#include <iostream>
 #include <vector>
 
 using namespace std;
@@ -56,3 +57,12 @@ public:
         return ans;
     }
 };
+
+int main() {
+    Solution sol;
+    vector<vector<int>> edges = {{0, 1}, {0, 2}, {2, 3}, {2, 4}, {2, 5}};
+    auto res = sol.sumOfDistancesInTree(6, edges);
+    for (int v : res) cout << v << " ";
+    cout << endl; // 8 12 6 10 10 10
+    return 0;
+}

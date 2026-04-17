@@ -1,6 +1,7 @@
 //
 // Created by Ruizhe Hou on 2020/10/7.
 //
+#include <iostream>
 #include <string>
 
 using namespace std;
@@ -21,3 +22,10 @@ public:
         return res;
     }
 };
+
+int main() {
+    Solution sol;
+    cout << sol.removeOuterParentheses("(()())(())") << endl; // ()()()
+    cout << sol.removeOuterParentheses("(()())(())(()(()))") << endl; // ()()()()(())
+    return 0;
+}

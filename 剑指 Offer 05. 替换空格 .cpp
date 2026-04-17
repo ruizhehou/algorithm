@@ -1,6 +1,7 @@
 //
 // Created by Ruizhe Hou on 2020/10/8.
 //
+#include <iostream>
 #include <string>
 
 using namespace std;
@@ -26,3 +27,9 @@ public:
         return s;
     }
 };
+
+int main() {
+    Solution sol;
+    cout << sol.replaceSpace("We are happy.") << endl; // We%20are%20happy.
+    return 0;
+}

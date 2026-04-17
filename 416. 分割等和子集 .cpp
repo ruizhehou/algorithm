@@ -1,7 +1,9 @@
 //
 // Created by Ruizhe Hou on 2020/10/11.
 //
+#include <iostream>
 #include <vector>
+#include <cstring>
 
 using namespace std;
 
@@ -24,3 +26,12 @@ public:
         return false;
     }
 };
+
+int main() {
+    Solution sol;
+    vector<int> n1 = {1, 5, 11, 5};
+    cout << sol.canPartition(n1) << endl; // 1
+    vector<int> n2 = {1, 2, 3, 5};
+    cout << sol.canPartition(n2) << endl; // 0
+    return 0;
+}

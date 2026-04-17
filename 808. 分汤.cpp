@@ -1,6 +1,7 @@
 //
 // Created by Ruizhe Hou on 2020/9/17.
 //
+#include <iostream>
 #include <math.h>
 #include <vector>
 
@@ -39,3 +40,10 @@ public:
         return dp[myN][myN];
     }
 };
+
+int main() {
+    Solution sol;
+    printf("%.5f\n", sol.soupServings(50));  // 0.62500
+    printf("%.5f\n", sol.soupServings(100)); // 0.71875
+    return 0;
+}

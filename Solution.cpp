@@ -1,6 +1,7 @@
 //
 // Created by Ruizhe Hou on 2020/9/26.
 //
+#include <iostream>
 #include <vector>
 #include <string>
 
@@ -49,3 +50,13 @@ public:
         return res;
     }
 };
+
+int main() {
+    Solution sol;
+    vector<string> words = {"abc", "abd", "abcd", "adc"};
+    string target = "abc";
+    auto res = sol.kDistance(words, target, 1);
+    for (auto &w : res) cout << w << " ";
+    cout << endl;
+    return 0;
+}

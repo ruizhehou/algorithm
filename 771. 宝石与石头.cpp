@@ -1,6 +1,7 @@
 //
 // Created by Ruizhe Hou on 2020/10/2.
 //
+#include <iostream>
 #include <string>
 #include <set>
 
@@ -20,3 +21,10 @@ public:
         return res;
     }
 };
+
+int main() {
+    Solution sol;
+    cout << sol.numJewelsInStones("aA", "aAAbbbb") << endl; // 3
+    cout << sol.numJewelsInStones("z", "ZZ") << endl; // 0
+    return 0;
+}

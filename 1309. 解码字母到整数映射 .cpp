@@ -1,6 +1,7 @@
 //
 // Created by Ruizhe Hou on 2020/10/8.
 //
+#include <iostream>
 #include <string>
 
 using namespace std;
@@ -22,3 +23,10 @@ public:
         return ans;
     }
 };
+
+int main() {
+    Solution sol;
+    cout << sol.freqAlphabets("10#11#12") << endl; // jkab
+    cout << sol.freqAlphabets("1326#") << endl; // acz
+    return 0;
+}

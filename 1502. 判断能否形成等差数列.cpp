@@ -1,6 +1,7 @@
 //
 // Created by Ruizhe Hou on 2020/10/12.
 //
+#include <iostream>
 #include <algorithm>
 #include <vector>
 
@@ -15,3 +16,12 @@ public:
         return true;
     }
 };
+
+int main() {
+    Solution sol;
+    vector<int> arr1 = {3, 5, 1};
+    cout << sol.canMakeArithmeticProgression(arr1) << endl; // 1
+    vector<int> arr2 = {1, 2, 4};
+    cout << sol.canMakeArithmeticProgression(arr2) << endl; // 0
+    return 0;
+}

@@ -1,6 +1,7 @@
 //
 // Created by Ruizhe Hou on 2020/10/13.
 //
+#include <iostream>
 #include <vector>
 
 using namespace std;
@@ -31,3 +32,12 @@ public:
         return res;
     }
 };
+
+int main() {
+    Solution sol;
+    vector<vector<int>> matrix = {{3, 7, 8}, {9, 11, 13}, {15, 16, 17}};
+    auto res = sol.luckyNumbers(matrix);
+    for (int v : res) cout << v << " ";
+    cout << endl; // 15
+    return 0;
+}

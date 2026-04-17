@@ -1,6 +1,7 @@
 //
 // Created by Ruizhe Hou on 2020/10/9.
 //
+#include <iostream>
 #include <cmath>
 
 using namespace std;
@@ -20,3 +21,11 @@ public:
         return res + (int) (3 * pow(10, i));
     }
 };
+
+int main() {
+    Solution sol;
+    cout << sol.maximum69Number(9669) << endl; // 9969
+    cout << sol.maximum69Number(9996) << endl; // 9999
+    cout << sol.maximum69Number(9999) << endl; // 9999
+    return 0;
+}

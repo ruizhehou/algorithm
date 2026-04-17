@@ -43,3 +43,10 @@ public:
         return res;
     }
 };
+
+int main() {
+    Solution sol;
+    vector<int> nums = {1, 3, 1, 2, 2, 1, 3, 1};
+    cout << sol.valley(nums) << endl;
+    return 0;
+}

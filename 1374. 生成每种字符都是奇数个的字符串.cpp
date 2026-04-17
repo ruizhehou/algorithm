@@ -2,6 +2,7 @@
 // Created by Ruizhe Hou on 2020/10/13.
 //
 
+#include <iostream>
 #include <string>
 
 using namespace std;
@@ -24,3 +25,10 @@ public:
         return res;
     }
 };
+
+int main() {
+    Solution sol;
+    cout << sol.generateTheString(4) << endl; // aaab
+    cout << sol.generateTheString(7) << endl; // aaaaaaa
+    return 0;
+}

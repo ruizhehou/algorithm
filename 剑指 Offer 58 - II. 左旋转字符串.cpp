@@ -1,6 +1,7 @@
 //
 // Created by Ruizhe Hou on 2020/10/9.
 //
+#include <iostream>
 #include <string>
 
 using namespace std;
@@ -13,3 +14,10 @@ public:
         return res;
     }
 };
+
+int main() {
+    Solution sol;
+    cout << sol.reverseLeftWords("abcdefg", 2) << endl; // cdefgab
+    cout << sol.reverseLeftWords("lrloseumgh", 6) << endl; // umghlrlose
+    return 0;
+}

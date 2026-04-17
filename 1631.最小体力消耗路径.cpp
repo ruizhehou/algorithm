@@ -1,10 +1,12 @@
 //
 // Created by houruizhe on 2021/1/29.
 //
+#include <iostream>
 #include <vector>
 #include <queue>
 #include <cmath>
 #include <numeric>
+#include <algorithm>
 
 using namespace std;
 
@@ -122,3 +124,12 @@ public:
         return 0;
     }
 };
+
+int main() {
+    Solution sol;
+    vector<vector<int>> h1 = {{1, 2, 2}, {3, 8, 2}, {5, 3, 5}};
+    cout << sol.minimumEffortPath(h1) << endl; // 2
+    vector<vector<int>> h2 = {{1, 2, 3}, {3, 8, 4}, {5, 3, 5}};
+    cout << sol.minimumEffortPath(h2) << endl; // 1
+    return 0;
+}

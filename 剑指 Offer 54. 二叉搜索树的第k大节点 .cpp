@@ -2,6 +2,7 @@
 // Created by Ruizhe Hou on 2020/10/13.
 //
 
+#include <iostream>
 #include <stack>
 
 using namespace std;
@@ -36,3 +37,15 @@ public:
         return res;
     }
 };
+
+int main() {
+    // BST: [3,1,4,null,2], k=1 => 4
+    TreeNode *root = new TreeNode(3);
+    root->left = new TreeNode(1);
+    root->right = new TreeNode(4);
+    root->left->right = new TreeNode(2);
+    Solution sol;
+    cout << sol.kthLargest(root, 1) << endl; // 4
+    cout << sol.kthLargest(root, 2) << endl; // 3
+    return 0;
+}
